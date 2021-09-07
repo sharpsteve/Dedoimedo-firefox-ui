@@ -1,70 +1,54 @@
-/* Proton rules */
+/* Based off */
 
 .titlebar-color {
     color: -moz-accent-color-foreground;
     background-color: -moz-accent-color;
-}
-
-.tab-background {
+  }
+  
+  .tab-background {
     border-radius: 0px 0px !important;
     margin-bottom: 0px !important;
-}
-
-.tabbrowser-tab:not([selected="true"]):not([multiselected="true"]) .tab-background {
+  }
+  
+  .tabbrowser-tab:not([selected="true"]):not([multiselected="true"]) .tab-background {
     background-color: color-mix(in srgb, currentColor 5%, transparent);
-}
-
-menupopup>menu, menupopup>menuitem {
+  }
+  
+  menupopup > menu, menupopup > menuitem {
     padding-block: 2px !important;
-}
-
-:root {
+  }
+  
+  :root {
     --arrowpanel-menuitem-padding: 2px !important;
-}
-
-/* Background tab borderd */
-
-.tabbrowser-tab:not([selected="true"])>.tab-stack>.tab-background {
+  }
+  
+  /* Background tab borders */
+  .tabbrowser-tab:not([selected="true"]) > .tab-stack > .tab-background {
     border: 1px solid rgba(130, 130, 130, 0.5) !important;
-}
-
-/* Foreground tab border */
-
-.tabbrowser-tab[selected="true"] .tab-background {
+  }
+  
+  /* Foreground tab border */
+  .tabbrowser-tab[selected="true"] .tab-background {
     border-left: 1px solid rgba(130, 130, 130, 0.5) !important;
     border-right: 1px solid rgba(130, 130, 130, 0.5) !important;
-}
-
-/* Tab accent color */
-
-.tabbrowser-tab[selected="true"] .tab-background {
+  }
+  
+  /* Tab accent color */
+  .tabbrowser-tab[selected="true"] .tab-background {
     border-top: 3px solid #3daee9 !important;
     border-top: 3px solid -moz-accent-color-foreground !important;
-}
-
-/* Tab bar height */
-
-.toolbar-items, .tabbrowser-tab {
+  }
+  
+  /* Tab bar height */
+  .toolbar-items, .tabbrowser-tab {
     max-height: 38px;
-}
-
-:root[uidensity=touch] .toolbar-items, .tabbrowser-tab {
+  }
+  
+  :root[uidensity=touch] .toolbar-items, .tabbrowser-tab {
     max-height: 45px;
-}
-
-/* Container tab color */
-
-.tabbrowser-tab[usercontextid] .tab-background {
-    background: var(--identity-tab-color) !important;
-    border-left: 1px solid rgba(130, 130, 130, 0.5) !important;
-    border-right: 1px solid rgba(130, 130, 130, 0.5) !important;
-    border-bottom: var(--identity-tab-color) !important;
-    opacity: 0.8 !important;
-    color: black;
-}
-
-/* Extra cosmetics */
-
-#urlbar-zoom-button {
+  }
+  
+  /* dedoimedo - I even tweaked the zoom button in the address bar, because the padding was off ever so slightly, and we can't have any rogue pixels, now can we. But we should end here, on a high note. */
+  #urlbar-zoom-button {
     padding-top: 0px !important;
-}
+    }
