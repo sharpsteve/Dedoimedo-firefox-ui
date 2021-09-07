@@ -60,6 +60,7 @@ menupopup>menu, menupopup>menuitem {
     border-right: 1px solid rgba(130, 130, 130, 0.5) !important;
     border-bottom: var(--identity-tab-color) !important;
     opacity: 0.8 !important;
+    color: black;
 }
 
 /* Extra cosmetics */
